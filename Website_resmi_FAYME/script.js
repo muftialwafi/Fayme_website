@@ -39,30 +39,8 @@ function showSlides(n) {
 // promotion-pictures { home } :
 const promotionPictures = document.querySelector("main section.home");
 const dataGambarPromosi = ["../Website_resmi_FAYME/img/oda-nobunaga1.jpg", "../Website_resmi_FAYME/img/oda_nobunaga2.jpg", "../Website_resmi_FAYME/img/oda_nobunaga3.jpeg", "../Website_resmi_FAYME/img/oda_nobunaga4.jpeg", "../Website_resmi_FAYME/img/oda_nobunaga5.jpeg", "../Website_resmi_FAYME/img/oda_nobunaga6.jpeg", "../Website_resmi_FAYME/img/oda_nobunaga7.jpeg"];
-
-const indexAwal = (index) => {
-    const arrayPromotionPictures = document.querySelector('ul.array-gambar-promotion');
-
-    const indexGambar = [];
-    for (let i = 0; i < dataGambarPromosi.length; i++) {
-        indexGambar.push('<li></li>');
-    }
-    console.log(indexGambar.length);    
-    
-
-    let cetakIndex = '';
-    for (let i=0; i < indexGambar.length; i++) {
-        if (i == index) {
-            indexGambar[i] = `<li class="warnaHitam-pPictures"></li>`
-        }
-        cetakIndex += indexGambar[i];
-    }
-    console.log(cetakIndex);
-    
-
-    return arrayPromotionPictures.innerHTML = cetakIndex;
-}
 indexAwal(0);
+
 
 let i = 1;
 setInterval( () => {
@@ -72,6 +50,7 @@ setInterval( () => {
     buatIndexGambar(i);
     i++;
 }, 9000)
+
 
 
 
@@ -99,6 +78,31 @@ const buatIndexGambar = (showedIndexGambar) => {
 
     return arrayPromotionPictures.innerHTML = cetakIndex;
 }
+
+
+function indexAwal(index) {
+    const arrayPromotionPictures = document.querySelector('ul.array-gambar-promotion');
+
+    const indexGambar = [];
+    for (let i = 0; i < dataGambarPromosi.length; i++) {
+        indexGambar.push('<li></li>');
+    }
+    console.log(indexGambar.length);    
+    
+
+    let cetakIndex = '';
+    for (let i=0; i < indexGambar.length; i++) {
+        if (i == index) {
+            indexGambar[i] = `<li class="warnaHitam-pPictures"></li>`
+        }
+        cetakIndex += indexGambar[i];
+    }
+    console.log(cetakIndex);
+    
+
+    return arrayPromotionPictures.innerHTML = cetakIndex;
+}
+
 
 
 
