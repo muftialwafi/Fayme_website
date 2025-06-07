@@ -2,7 +2,7 @@ let slideIndex = 1;
 let timeout;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controls { about }
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }

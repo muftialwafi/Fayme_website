@@ -189,7 +189,7 @@ a {
         border: 3px solid white;
         border-radius: 50%;
         box-sizing: border-box;
-}
+    }
 
     ul.array-gambar-promotion li.warnaHitam-pPictures {
         background-color: white;
@@ -197,7 +197,21 @@ a {
         opacity: 1;
     }
 
+    ul.array-gambar-promotion li:hover {
+        background-color: white;
+        /* border: 3px solid #16519a; */
+        border: 3px solid rgb(213, 149, 29);
+        opacity: 1;
+        cursor: pointer;
+    }
 
+    ul.array-gambar-promotion li.warnaHitam-pPictures:hover {
+        background-color: white;
+        /* border: 3px solid #16519a; */
+        border: 3px solid rgb(213, 149, 29);
+        opacity: 1;
+        cursor: pointer;
+    }
 
     
     
